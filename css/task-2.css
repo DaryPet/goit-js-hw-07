@@ -1,14 +1,19 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
 }
 .gallery li {
   margin: 10px;
+  flex: 0 0 calc(30% - 10px);
 }
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 250px;
   border: 1px solid #0000;
   border-radius: 5px;
+  object-fit: cover;
+  display: block;
 }

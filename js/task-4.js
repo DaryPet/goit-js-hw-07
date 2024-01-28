@@ -10,19 +10,18 @@ const form = document.querySelector(".login-form");
 function formHandler(event) {
   event.preventDefault();
   const emailData = event.target.email.value.trim();
-  const passwordDada = event.target.password.value.trim();
+  const passwordData = event.target.password.value.trim();
 
-  if (emailData === "" || passwordDada === "") {
+  if (emailData === "" || passwordData === "") {
     alert("All form fields must be filled in");
+  } else {
+    const data = {
+      email: emailData,
+      password: passwordData,
+    };
+    form.reset();
+    console.log(data);
   }
-
-  const data = {
-    email: emailData,
-    password: passwordDada,
-  };
-
-  console.log(data);
-  form.reset();
 }
 
 form.addEventListener("submit", formHandler);

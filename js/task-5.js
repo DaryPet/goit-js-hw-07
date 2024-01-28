@@ -15,6 +15,7 @@ const colorSpan = widget.querySelector(".color");
 const changeColorButton = widget.querySelector(".change-color");
 
 changeColorButton.addEventListener("click", function () {
-  document.body.style.backgroundColor = getRandomHexColor();
-  colorSpan.textContent = getRandomHexColor;
+  const newColor = getRandomHexColor();
+  document.body.style.backgroundColor = newColor;
+  colorSpan.textContent = newColor;
 });

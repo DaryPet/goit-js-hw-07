@@ -5,7 +5,7 @@
 // елемента(тегу < h2 >) і кількість елементів у категорії(усіх < li >, вкладених у нього).
 
 const categories = document.getElementById("categories");
-console.log(categories);
+// console.log(categories);
 
 const categoriesItems = categories.querySelectorAll("li.item").length;
 console.log(`Number of categories : ${categoriesItems}`);

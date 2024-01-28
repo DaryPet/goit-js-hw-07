@@ -34,14 +34,15 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-// console.log(gallery);
+const fragment = document.createDocumentFragment();
 
 images.forEach((image) => {
   const li = document.createElement("li");
   const img = document.createElement("img");
   img.src = image.url;
   img.alt = image.alt;
-
   li.append(img);
-  gallery.append(li);
+  fragment.append(li);
 });
+
+gallery.append(fragment);

@@ -1,7 +1,17 @@
-/* #boxes {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-} */
+input {
+  width: 30%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: 1px solid #ec0c0c;
+  border-radius: 5px;
+}
+button {
+  width: 20%;
+  padding: 10px;
+  background-color: #4460db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

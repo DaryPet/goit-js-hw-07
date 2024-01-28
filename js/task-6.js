@@ -47,9 +47,11 @@ createBtn.addEventListener("click", function () {
 destroyBtn.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
+  boxesContainer.innerHTML = "";
+
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
-    box.className = "box";
+    // box.className = "box";
     box.style.width = `${30 + i * 10}px`;
     box.style.height = `${30 + i * 10}px`;
     box.style.backgroundColor = getRandomHexColor();
